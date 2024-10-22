@@ -1,0 +1,20 @@
+{
+  "name": "t3w2-intro-to-node",
+  "version": "1.0.0",
+  "description": "Dice Roller Application in the Terminal",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "Dice",
+    "Jess",
+    "fun",
+    "game"
+  ],
+  "author": "Jess",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^12.0.0"
+  }
+}
