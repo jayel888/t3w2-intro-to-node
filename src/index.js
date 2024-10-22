@@ -1,4 +1,4 @@
-const inquirer = require("inquirer")
+const inquirer = require("inquirer").default;
 
 console.log("Dice Roller Application starts...")
 
@@ -15,4 +15,15 @@ function rollDice(diceSide=6) {
     return diceResult
 }
 
-console.log("The side you rolled is: " + rollDice());
+// console.log("The side you rolled is: " + rollDice());
+
+const prompt = inquirer.createPromptModule();
+prompt([
+    {
+        type: "number",
+        name: "dice_side",
+        message: "How many sided dice do you want to roll?"
+    }
+]).then((answer) => {
+    console.log(rollDice(answer.dice_side))
+});
