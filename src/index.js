@@ -10,8 +10,8 @@ console.log("Dice Roller Application starts...")
  */
 
 function rollDice(diceSide=6) {
-    let diceResult = 0;
-    diceResult = Math.ceil(Math.random()* diceSide)
+    let diceResult = Math.ceil(Math.random()* diceSide);
+    // diceResult = Math.ceil(Math.random()* diceSide)
     return diceResult
 }
 
